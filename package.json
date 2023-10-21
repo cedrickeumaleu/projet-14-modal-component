@@ -1,6 +1,6 @@
 {
   "name": "component-modal-grst",
-  "version": "0.1.2",
+  "version": "0.2.2",
   "description": "Modal component, which could be used for a notification of completed form",
   "keywords": ["modal", "React", "composant"],
   "author": "Romain GRESSET",
@@ -8,7 +8,9 @@
   "module": "dist/index.js",
   "files": ["dist", "README.md"],
   "dependencies": {
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "peerDependencies": {
     "react": "^18.2.0",
