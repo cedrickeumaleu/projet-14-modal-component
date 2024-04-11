@@ -1,12 +1,19 @@
 {
-  "name": "component-modal",
+  "name": "components-modal-modal",
   "version": "0.1.1",
   "description": "Modal component, useful for confirming the sending of the form ",
-  "keywords": ["modal", "React", "composant"],
+  "keywords": [
+    "modal",
+    "React",
+    "composant"
+  ],
   "author": "keumaleu Cedrick",
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "dependencies": {
     "web-vitals": "^2.1.4",
     "react": "^18.2.0",
@@ -34,10 +41,22 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": ["react-app", "react-app/jest"]
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
-    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
-  }
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "license": "ISC"
 }

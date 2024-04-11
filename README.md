@@ -10,7 +10,7 @@ Veuillez vous assurer que vous disposez de la bonne version. Vous pouvez le vér
 Vérifier la version de Node.js
 nœud --version
 
-### Installation run the following command: `npm install component-modal`
+### Installation run the following command: `npm install components-modal-modal`
 
 Import :
 
