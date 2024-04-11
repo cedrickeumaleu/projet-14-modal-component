@@ -1,14 +1,14 @@
 # Component-moda `create-react-app`.
 
-Currently used to add a modal after anything like a click on a button.
+Actuellement utilisé pour ajouter un modal après quelque chose comme un clic sur un bouton.
 
-## Prerequisites :
+## Prérequi :
 
 Node.js
 
-Please make sure you have the right version. You can verify this by using the following commands in your terminal:
-Check Node.js version
-node --version
+Veuillez vous assurer que vous disposez de la bonne version. Vous pouvez le vérifier en utilisant les commandes suivantes dans votre terminal :
+Vérifier la version de Node.js
+nœud --version
 
 ### Installation run the following command: `npm install component-modal`
 
@@ -16,19 +16,25 @@ Import :
 
 import Modale from 'component-modal';
 
-Set the component props:
+Définissez les accessoires du composant :
 
-onClose: A function to be executed when the modal is closed. It's typically triggered when the user clicks the close button.
-Type: Function
+onClose : Une fonction à exécuter lorsque le modal est fermé. Il est généralement déclenché lorsque l'utilisateur clique sur le bouton de fermeture.
+Type : Fonction
 
-fullName: A string that allows you to personalize the name displayed in the modal.
-Type: String
+isOpen: Un booléen qui contrôle l'affichage de la modal. Si (true), la modal est affichée ; si (false), elle est cachée.
 
 backgroundColor: personnalize the color of the background in the modal.
 type: String
 
-textColor: personnalize the color of the text in the modal.
-Type: String
+message: Le message à afficher à l'intérieur de la modal.
+
+### `Methodes`
+
+handleClose: Une fonction interne utilisée pour gérer la fermeture de la modal. Elle est appelée lorsque l'utilisateur clique sur le bouton de fermeture.
+
+### `utilisation`
+
+Pour utiliser ce composant, importez-le dans votre application React et intégrez-le là où vous souhaitez afficher une fenêtre modale.
 
 ##### Example:
 
@@ -36,22 +42,20 @@ Type: String
     import Modale from 'component-modal';
 
         function MyComponent() {
-            const closeModale = () => {
-                // code
+            const handleClose = () => {
+            onClose();
             };
 
+            if (!isOpen) return null;
             return (
-                <div>
-                    <h1>Mon composant React</h1>
-                    <p>Cliquez sur le bouton pour afficher la modale :</p>
-                    <button onClick={openModale}>Afficher la modale</button>
-
-                    <Modale
-
-                        onClose={closeModale}
-                        backgroundColor="#ffcc00"
-                        textColor="#333"
-                    />
+                <div className="modal-overlay">
+                <div className="modal">
+                    <div className="modal-content">
+                    <span className="close" onClick={handleClose}>&times;</span>
+                    <p>{message}</p>
+                    <button onClick={handleClose}>Close</button>
+                    </div>
+                </div>
                 </div>
             );
         }
