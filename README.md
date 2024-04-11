@@ -1,6 +1,6 @@
 # Component-moda `create-react-app`.
 
-Actuellement utilisé pour ajouter un modal après quelque chose comme un clic sur un bouton.
+Actuellement utilisé pour ajouter un modal après quelque chose comme un clic sur un bouton. pour afficher un message de confirmation
 
 ## Prérequi :
 
@@ -16,17 +16,23 @@ Import :
 
 import Modale from 'component-modal';
 
-Définissez les accessoires du composant :
+## Définissez les accessoires du composant :
 
-onClose : Une fonction à exécuter lorsque le modal est fermé. Il est généralement déclenché lorsque l'utilisateur clique sur le bouton de fermeture.
+### onClose :
+
+Une fonction à exécuter lorsque le modal est fermé. Il est généralement déclenché lorsque l'utilisateur clique sur le bouton de fermeture.
 Type : Fonction
 
-isOpen: Un booléen qui contrôle l'affichage de la modal. Si (true), la modal est affichée ; si (false), elle est cachée.
+### isOpen:
+
+Un booléen qui contrôle l'affichage de la modal. Si (true), la modal est affichée ; si (false), elle est cachée.
 
 backgroundColor: personnalize the color of the background in the modal.
 type: String
 
-message: Le message à afficher à l'intérieur de la modal.
+## message:
+
+Le message à afficher à l'intérieur de la modal.
 
 ### `Methodes`
 
