@@ -58,5 +58,13 @@
       "last 1 safari version"
     ]
   },
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cedrickeumaleu/projet-14-modal-component.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cedrickeumaleu/projet-14-modal-component/issues"
+  },
+  "homepage": "https://github.com/cedrickeumaleu/projet-14-modal-component#readme"
 }
