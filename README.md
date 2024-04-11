@@ -1,28 +1,20 @@
-# Component-modal-grst library of React components created using `create-react-app`.
+# Component-moda `create-react-app`.
+
 Currently used to add a modal after anything like a click on a button.
 
+## Prerequisites :
 
-
-## Prerequisites : 
-Node.js v12
+Node.js
 
 Please make sure you have the right version. You can verify this by using the following commands in your terminal:
 Check Node.js version
 node --version
 
+### Installation run the following command: `npm install component-modal`
 
+Import :
 
-### Installation run the following command: `npm install component-modal-grst`
-
-
-
-#### How to use it :
-
-This component use a fontAwesome icon, but feel free to use a SVG or anything else if you need it.
-
-Import : 
-
-import Modale from 'component-modal-grst';
+import Modale from 'component-modal';
 
 Set the component props:
 
@@ -38,12 +30,10 @@ type: String
 textColor: personnalize the color of the text in the modal.
 Type: String
 
-
-
 ##### Example:
 
     import React from 'react';
-    import Modale from 'component-modal-grst';
+    import Modale from 'component-modal';
 
         function MyComponent() {
             const closeModale = () => {
@@ -57,7 +47,7 @@ Type: String
                     <button onClick={openModale}>Afficher la modale</button>
 
                     <Modale
-                        fullName={FirstName + ' ' + LastName}
+
                         onClose={closeModale}
                         backgroundColor="#ffcc00"
                         textColor="#333"
@@ -67,7 +57,3 @@ Type: String
         }
 
     export default MyComponent;
-
-
-
-

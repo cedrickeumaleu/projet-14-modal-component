@@ -1,9 +1,9 @@
 {
-  "name": "component-modal-grst",
-  "version": "0.2.2",
-  "description": "Modal component, which could be used for a notification of completed form",
+  "name": "component-modal",
+  "version": "0.1.1",
+  "description": "Modal component, useful for confirming the sending of the form ",
   "keywords": ["modal", "React", "composant"],
-  "author": "Romain GRESSET",
+  "author": "keumaleu Cedrick",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": ["dist", "README.md"],
