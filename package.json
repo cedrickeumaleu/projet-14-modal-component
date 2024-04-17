@@ -1,6 +1,6 @@
 {
   "name": "components-modal-modal",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "description": "Modal component, useful for confirming the sending of the form ",
   "keywords": [
     "modal",
@@ -8,8 +8,8 @@
     "composant"
   ],
   "author": "keumaleu Cedrick",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "dist/modale/index.js",
+  "module": "dist/modale/index.js",
   "files": [
     "dist",
     "README.md"

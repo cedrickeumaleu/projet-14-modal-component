@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+
 
 const Modale = ({ isOpen, onClose, message }) => {
   const handleClose = () => {
@@ -9,14 +9,11 @@ const Modale = ({ isOpen, onClose, message }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="modal-overlay">
-      <div className="modal">
+    <div className="modal">
         <div className="modal-content">
           <span className="close" onClick={handleClose}>&times;</span>
-          <p>{message}</p>
-          <button onClick={handleClose}>Close</button>
-        </div>
-      </div>
+          <p>{message}</p>  
+        </div>    
     </div>
   );
 };
